@@ -35,6 +35,10 @@
 			- compute
 		- row vs col major
 		- inspiration from simon's and pranjalssh kernels
+            - https://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog
+            - https://siboehm.com/articles/22/CUDA-MMM
+            - https://research.colfax-intl.com/research/ - literature
+
 	- autotuning
 		- grid search through:
 			- batchsizes
@@ -61,7 +65,8 @@
 	- cuDNN non-fused
 	- cuBLAS non-fused
 	- cuBLAS-LT
-	- cutlass
+	- cutlass(https://prateekshukla1108.github.io/cutlass3/docs/cpp/blackwell_functionality.html)
+    - cutlass epilogue(https://gist.github.com/prateekshukla1108/ba95f51f9f2df58ca2355daa18932a3c)
 	- tensorRT
 	- onnx runtime
 - all the way down, square or rectangles? i know you can get correct output if you launch a kernel as a square, but then get 0s or NaNs or ever errors when you change to rectangle
