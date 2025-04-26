@@ -1,0 +1,4 @@
+torch 
+langchain 
+jinja2
+langchain_community
