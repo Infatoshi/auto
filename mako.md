@@ -1,26 +1,14 @@
-# TODO
-## prereqs
-- `deviceQuery` (not `nvcc --version` or `nvidia-smi`)
-- `ncu` and `nsys`
-- pytorch w/ cuda support
+# mako.dev
 
-## type of kernel
-- activation
-- conv
-- gemm
-- softmax
-- norm
-- pool
-- element-wise
-- reduction
-- top-k
-- sort
+## interview prep:
+- study RL to improve models (might take some time (a project or blog post on this will do.. just code which you can clone or even run a docker image to kick models off training on their own))
+- do some more architectural planning and be absolutely delusional while its happening -> for auto project
+- touch up on actual kernel code (go through simons blog post again and relearn all those kernels (should take a day if i really put my mind to it (2-3 hrs per kernel up to kernel 6 (vectorized i think) ) ) ) 
+- skills: rl, kernel coding
 
-*start with passing a kernel into a config file and making an individual operation faster, rather than a a whole model at onc*
-
-
-
-
+potential competitors:
+- mojo
+- luminal
 
 Positioning in the market:
 - Mojo exists -> we can automate mojo kernel generation as well, but cuda/rocm/triton/cutlass is still unsolved problem
@@ -45,23 +33,5 @@ Look up to:
 - https://x.com/mako_dev_ai/status/1937873917646897479
 - Manus.im 
 - openmanus
-
-
-- “Auto” project
-    - Start with gaussian splatting project to get taste on how something is done manually
-        - build.cpp
-        - old.cu
-        - new.cu
-        - Compare.py
-            - Warmup iters
-            - Bench iters
-            - Device sync
-            - torch.allclose - tol=5e-3?
-            - Throughput vs latency
-            - Grid search through shapes and plot in matplotlib
-    - Use ~/gen/CUDA/auto project on my linux rig
-
-Study RL (needed): https://github.com/volcengine/verl
-
 
 
